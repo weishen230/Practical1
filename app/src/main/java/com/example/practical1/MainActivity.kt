@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val total: TextView = findViewById(R.id.total)
+
 
 
     }

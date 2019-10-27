@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_marginTop="100sp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    tools:context=".MainActivity">
+
+    >
+
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Hello World!"
+
+
         android:id="@+id/dice1_image"
-        android:src="@drawable/dice_1"
-        android:textSize="30sp"/>
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:src="@drawable/dice_1"
         android:text="Hello World!"
+        android:textSize="30sp" />
+
+    <ImageView
         android:id="@+id/dice2_image"
-        android:src="@drawable/dice_1"
-        android:textSize="30sp"/>
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Hello World!"
-        android:id="@+id/dice3_image"
         android:src="@drawable/dice_1"
-        android:textSize="30sp"
-        />
+        android:text="Hello World!"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/dice3_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dice_1"
+        android:text="Hello World!"
+        android:textSize="30sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
 
 
     <Button
@@ -43,15 +66,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:id="@+id/roll_button"
+
         android:text="@string/roll_label" />
 
+    <Button
 
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Total = ?"
-        android:id="@+id/total"
-        android:textSize="30sp"
-        />
+        android:id="@+id/clear_button"
+
+        android:text="@string/clear_label" />
+
+    </LinearLayout>
+
 </LinearLayout>
+
+</ScrollView>
